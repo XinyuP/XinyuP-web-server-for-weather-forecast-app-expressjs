@@ -116,6 +116,28 @@ app.get('/weather', (req, res) => {
 // app.com/about
 
 
+app.get('/help/*', (req, res) => {
+    res.render('404', {
+        errorMessage: 'Help article not found.',
+        title: "404",
+        name: "Blaire P"
+    })
+})
+
+
+app.get('*', (req, res) => {
+    res.render('404', {
+        errorMessage: 'Page not found.',
+        title: "404",
+        name: "Blaire P"
+    })
+})
+// this needs to come last after all other routes are set up
+// '*' means everything is a match
+
+
+
+
 
 // start the server up
 
