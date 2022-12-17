@@ -9,16 +9,28 @@ const express = require('express');
 
 const app = express()
 
-// configure exoress to serve the directory up
+// configure express to serve the directory up
 
 
-app.use(express.static(path.join(__dirname, '../public')))
+////////////// Define paths for express config /////////////
+const publicDirectoryPath = path.join(__dirname, '../public')
+const viewsPath = path.join(__dirname, '../viewss')
+
+
+////////////// set handlebars engines and views location //////////////
 // app.use() is a way to customize your server
 // express.static(), we pass its return value into app.use()
 // static() take the path to the folder we wanna serve up
 app.set('view engine', 'hbs')
-// set() allows to set a value for a given express setting 
+// set() allows to set a value for a given express setting
 // 'key', 'value'
+app.set('views', viewsPath) // if we change the name of the views path, we need to update the path views point to
+
+
+////////////// setup static directory to serve //////////////
+app.use(express.static(publicDirectoryPath))
+
+
 
 app.get('', (req, res) => {
     res.render('index', {
