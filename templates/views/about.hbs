@@ -6,11 +6,13 @@
     </head>
 
 	<body>
-		<h1>{{title}}</h1>
+		<!-- <h1>{{title}}</h1> -->
+        {{>header}}
         <img src="/img/beautycutie.jpg">
-        <p style="font-weight: bold; color:palevioletred">
+        {{!-- <p style="font-weight: bold; color:palevioletred">
             Created by {{name}}
-        </p>
+        </p> --}}
+        {{>footer}}
         
 	</body>
 </html>

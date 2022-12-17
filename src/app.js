@@ -30,6 +30,9 @@ app.set('view engine', 'hbs')
 // set() allows to set a value for a given express setting
 // 'key', 'value'
 app.set('views', viewsPath) // if we change the name of the views path, we need to update the path views point to
+hbs.registerPartials(partialsPath)
+
+
 
 
 ////////////// setup static directory to serve //////////////
