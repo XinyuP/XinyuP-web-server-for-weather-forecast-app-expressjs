@@ -1,20 +1,25 @@
-const path = require('path')
+const path = require('path');
 const express = require('express');
+const hbs = require('hbs');
+
+
 // express is just a function
 // call it to create a new express application
+const app = express()
+
 
 // console.log(__dirname) // C:\Users\pangx\Desktop\NodeTutorial\web-server\src
 // // console.log(__filename) // C:\Users\pangx\Desktop\NodeTutorial\web-server\src\app.js
 // console.log(path.join(__dirname, '../public'))
 
-const app = express()
 
 // configure express to serve the directory up
 
 
 ////////////// Define paths for express config /////////////
 const publicDirectoryPath = path.join(__dirname, '../public')
-const viewsPath = path.join(__dirname, '../viewss')
+const viewsPath = path.join(__dirname, '../templates/views')
+const partialsPath = path.join(__dirname, '../templates/partials')
 
 
 ////////////// set handlebars engines and views location //////////////
