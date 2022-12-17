@@ -1,6 +1,10 @@
 h1{
-    color: grey;
+    color: rgb(52, 207, 235);
 } 
+p{
+    color: pink,
+
+}
 
 img {
     width: 300px;

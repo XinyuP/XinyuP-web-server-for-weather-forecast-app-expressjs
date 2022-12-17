@@ -16,6 +16,33 @@ app.use(express.static(path.join(__dirname, '../public')))
 // app.use() is a way to customize your server
 // express.static(), we pass its return value into app.use()
 // static() take the path to the folder we wanna serve up
+app.set('view engine', 'hbs')
+// set() allows to set a value for a given express setting 
+// 'key', 'value'
+
+app.get('', (req, res) => {
+    res.render('index', {
+        title: "Weather APP",
+        name: "Blaire P"
+    })
+})
+
+
+app.get('/about', (req, res) => {
+    res.render('about', {
+        title: "About Me",
+        name: "Blaire P"
+    })
+})
+
+app.get('/help', (req, res) => {
+    res.render('help', {
+        helpText: "This is the helpful text",
+        title: "Help",
+        name: "Blaire P"
+
+    })
+})
 
 
 
