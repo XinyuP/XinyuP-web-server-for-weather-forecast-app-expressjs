@@ -1,13 +1,40 @@
+body {
+    color:brown;
+    font-family: "Comic Sans MS";
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+footer {
+    color:palevioletred;
+    border-top:1px solid #debecb;
+
+    padding: 16px 0;
+    margin-top: 16px;
+}
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+
 h1{
+    font-size: 64px;
     color: rgb(52, 207, 235);
+    margin-bottom: 16px;
 } 
+
+header a {
+    color:#a265d1;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+
 p{
     color: pink,
-
 }
 
 img {
     width: 300px;
-
-
 }
