@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
-	<head> 
-        <link rel="stylesheet" href="./css/styles.css"> 
-    </head>
+        <head> 
+                <title>404</title>
+                <link rel="icon" href="/img/weather.png">
+                <link rel="stylesheet" href="./css/styles.css"> 
+        </head>
 
-	<body>
-        {{>header}}
-        <p>{{errorMessage}}</p>
-        {{>footer}}
+        <body>
+                <div class="main-content">
+                        {{>header}}
+                        <p>{{errorMessage}}</p>
+                </div>
+
+                {{>footer}}
         
 	</body>
 </html>
