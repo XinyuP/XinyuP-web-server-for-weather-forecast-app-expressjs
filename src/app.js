@@ -99,11 +99,19 @@ app.get('/help', (req, res) => {
 // })
 
 app.get('/weather', (req, res) => {
+    if (!req.query.address) {
+        return res.send({
+            error: 'You must provide an address!'
+        })
+    }
     res.send({
         forecast: 'It is snowing',
-        location: 'Ann Arbor'
+        location: 'Ann Arbor',
+        address: req.query.address
     })
 })
+
+
 
 // in reality, either send back HTML designed to be rendered in the browser,
 // or send back JSON object designed to be used by code
