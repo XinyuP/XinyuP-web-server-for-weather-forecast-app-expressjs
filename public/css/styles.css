@@ -1,5 +1,5 @@
 body {
-    color:brown;
+    color:rgb(110, 102, 102);
     font-family: "Comic Sans MS";
     max-width: 650px;
     margin: 0 auto;
@@ -32,6 +32,8 @@ header {
 }
 
 
+
+
 h1{
     font-size: 64px;
     color: rgb(52, 207, 235);
@@ -52,4 +54,27 @@ p{
 
 .portrait {
     width: 300px;
+}
+
+input {
+    border: 1.3px solid #a265d1;
+    /*palevioletred ;
+    #; */
+
+    padding: 8px;
+    font-family: "Comic Sans MS";
+}
+
+button {
+    cursor: pointer;
+    border: 1.2px solid #be93e0;
+    background: #be93e0;
+    color: white;
+    padding: 8px;
+    font-family: "Comic Sans MS";   
+}
+
+#about-1 {
+      margin-bottom: 24px;
+
 }

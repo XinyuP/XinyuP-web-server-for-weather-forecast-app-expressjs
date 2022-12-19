@@ -59,7 +59,7 @@ app.get('/about', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        helpText: "This is the helpful text",
+        helpText: "This is a weather forecast app. \n To search the weather, just put the address in the search box and click search.\n The real-time weather will be provided to you!",
         title: "Help",
         name: "Blaire P"
 
