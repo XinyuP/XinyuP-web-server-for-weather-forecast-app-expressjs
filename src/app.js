@@ -8,6 +8,7 @@ const forecast = require('./utils/forecast');
 // express is just a function
 // call it to create a new express application
 const app = express()
+const port = process.env.PORT || 3000
 
 
 // console.log(__dirname) // C:\Users\pangx\Desktop\NodeTutorial\web-server\src
@@ -165,8 +166,8 @@ app.get('*', (req, res) => {
 
 // start the server up
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000') // not display on browser
+app.listen(port, () => {
+    console.log('Server is up on port ' + port) // not display on browser
 }) // only ever used a single time
 // the callback function will just run when the server is up and running
 // asyncrounous process
