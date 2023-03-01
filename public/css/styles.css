@@ -1,6 +1,6 @@
 body {
     color:rgb(22, 198, 175);
-    font-family: "Comic Sans MS";
+    font-family: "emoji";
     max-width: 650px;
     margin: 0 auto;
     padding: 0 16px;
@@ -62,7 +62,7 @@ input {
     #; */
 
     padding: 8px;
-    font-family: "Comic Sans MS";
+    font-family: "emoji";
 }
 
 button {
@@ -71,7 +71,7 @@ button {
     background: #be93e0;
     color: white;
     padding: 8px;
-    font-family: "Comic Sans MS";   
+    font-family: "emoji";   
 }
 
 #about-1 {
